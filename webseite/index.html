@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kontaktdatensystem: Login</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="javascript.js"></script>
+        <style>
+            @font-face {
+     font-family: "Lora";
+     src: url(fonts/lora/Lora-VariableFont_wght.ttf) format("truetype");
+ }
+     </style> 
+    </head>
+    <body id="body">       
+        <div id="logindiv">
+            <div id="logindivinner">
+                <form method="POST"></form>
+                <p id="logintitel" class="loginelemente">Kontaktdatensystem</p>
+                <label id="loginnamelabel" class="loginelemente">Nutzername: </label>
+                <input id="loginname" class="loginelemente">
+                <label id="loginpasswortlabel" class="loginelemente">Passwort: </label>
+                <input id="loginpasswort" class="loginelemente">
+                <button>Senden</button>
+                <p id="loginhint" class="loginelemente">(loginname: lenz)</p>
+                <p id="loginhint2" class="loginelemente">(loginpasswort: 1)</p>
+                <p class="loginelemente">"Senden" sendet die Daten per POST-Methode an den Server. Dort werden sie mit der mongoDb ALtlas (cloud) Datenbank abgeglichen.</p>
+                </form>
+            </div>
+        </div>      
+    </body>
+</html>
