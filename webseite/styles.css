@@ -1,0 +1,276 @@
+:root{
+    --tabellenhintergrundfarbe:rgb(252, 252, 252);
+    --maincolor:#0094FF;
+}
+
+*{
+    font-family: "Lora";
+}
+
+#tabellenrahmen{
+    background-color: var(--tabellenhintergrundfarbe);
+    display:grid;
+    width:98vw;
+    
+    position: absolute;
+    top:100px;
+   }
+.tabelleninhalt{    
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabelleninhalttitel{
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabelleninhalttitel:hover{
+    cursor:pointer;
+    background-color: grey;
+    
+}
+
+.tabelleninhalt:hover{  
+    cursor:pointer;
+}
+
+#suchRahmen{
+    background-color: var(--tabellenhintergrundfarbe);
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width:95%;
+    height:100%;
+    position: absolute;
+    top:100px;
+}
+.suchrahmeninner{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width:400px;
+}
+
+.suchrahmeninner:hover{
+    cursor:pointer;
+    background-color: grey;
+}
+
+.sucheinhalt{
+    height:24px;
+    padding-top: 15px;
+}
+.sucheinhaltergebnis{
+    height:24px;
+    padding-bottom: 15px;
+}
+
+#kreislinks:hover{
+    cursor:pointer;
+    content:url("bilder/kreislinks.png");
+}
+#kreisrechts:hover{
+    cursor:pointer;
+    content:url("bilder/kreisrechts.png");
+}
+#kreislinks{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    z-index:10;
+}
+#kreisrechts{
+    
+    position:fixed;
+    right:0px;
+    bottom:0px;
+    z-index:10;
+}
+
+
+
+
+
+
+#menuleiste{
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:60px;
+    z-index:10;
+    background-color: var(--maincolor);
+}
+
+#suche{
+position: fixed;
+top:10px;
+width:200px;
+left:50%;
+font-size: 26px;
+}
+
+
+
+#logo{
+    position: fixed;
+    top:10px;
+    font-size: 28px;
+}
+
+#logo:hover{
+    cursor: pointer;
+}
+
+#output{
+    position: fixed;
+    top:-20px;
+    right:10px;
+    font-size: 28px;
+    color:red;
+}
+
+
+#optionsmenue{
+    background-color: white;
+    border:2px soldi black;
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    height:60px;
+    width:100%;
+    z-index:7;
+    display:none;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    
+}
+
+#optionsmenueinner{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    font-size:22px;
+}
+
+#optionsmenueinner2{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+#optionsmenueinner3{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 22px 22px 22px 22px;
+}
+
+
+.optionsmenueitem:hover, .optionsmenueitemB:hover{  
+    background-color:lightgrey;
+    cursor:pointer;
+    }
+
+.navigationsbutton:hover{
+    cursor:pointer;
+}
+
+#informationsmenue{
+    position: absolute;
+    top:70px;
+    width: 95%;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+#bearbeitenmenue{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top:60px;
+    left:0px;
+    width: 100%;
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    
+}
+
+#bearbeitenmenueinner{
+    background-color: white;
+    height:700px;
+    width: 400px;
+ display:flex;
+    flex-direction: column;
+
+}
+
+#bearbeitenmenueinnergrid{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 28px 28px 28px 28px 28px 28px 28px 28px 28px 28px 28px 28px;
+   color:grey;   
+}
+
+.bearbeitenmenueinput, .bearbeitenmenuelabel{
+    border: 0px;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bearbeitenmenuelabel{
+    text-align: right;
+}
+
+#bearbeitenmenuetitel{   
+    text-align: center; 
+    font-size: 30px;
+}
+
+#bearbeitenmenuetitel2{   
+    text-align: center; 
+    font-size: 18px;
+}
+
+.bearbeitenmenuesenden,.bearbeitenmenueabbrechen,.bearbeitenmenueloeschen{
+    /*border: 2px solid rgb(218, 218, 218);*/
+    border:1px;
+    font-size: 18px;
+}
+
+.bearbeitenmenuesenden:hover,.bearbeitenmenueabbrechen:hover,.bearbeitenmenueloeschen:hover{
+    background-color: rgb(218, 218, 218);
+    cursor:pointer;
+}
+
+#logindiv{
+    background-color: var(--maincolor);
+    display: flex;
+    padding:0px;
+    margin:0px;
+    width:98vw;
+    height:96vh;
+    align-items: center;
+    justify-content: center;
+    z-index: 16;
+}   
+
+#logindivinner{
+    background-color: var(--maincolor);
+    width:200px;
+    height:160px;
+    padding-left: 10px;
+    z-index: 16;
+}
+
